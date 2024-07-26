@@ -11,12 +11,12 @@ The project currently has the following structure:
 ### Planned Structure
 
 1. **Home**
-    - Header with navigation (Home, About Me, Skills, Projects, Contact & Resume)
+    - Header with navigation (Home, About Me, Skills, Projects, Contact & Resume), fixed
     - Introduction with name, role (developer and student), and a professional photo
 2. **About**
     - Section with a brief bio, education, and extra involvements
 3. **Skills**
-    - Skills represented visually (similar to "my services" in Kevin’s but with Alexander’s representation)
+    - Skills represented visually 
 4. **Projects**
     - Categorized into sections:
         - Web Applications
