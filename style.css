@@ -47,8 +47,8 @@ body{
     right: 15px; 
     padding: 10px;
     border-radius: 10px;
+    background-color: #ffffffb5;
 }
-
 
 nav{
     display: flex;
@@ -132,7 +132,7 @@ nav ul li a:hover::after{
 
 /* styling go to my projects button */
 .go-projects{
-    margin-top: -40px ;
+    margin-top: -50px ;
 }
 .go-projects a {
     text-decoration: none;
@@ -216,8 +216,44 @@ nav ul li a:hover::after{
 
 
 /* ---------------skills section ------------- */
+#skills{
+    padding: 30px 0;
+}
+.row {
+    display: flex;
+    flex-wrap: nowrap; /* Ensures columns stay in a single row */
+    gap: 20px; /*space between columns */
+}
 
+.skills-column1, .skills-column2 {
+    flex: 1; /* Makes columns equal width */
+    /* Optional: Additional styling for columns */
+    padding: 10px;
+}
 
+.sub-row {
+    display: grid;
+    grid-template-columns: 5% 95%; 
+    align-items: center;
+    gap: 20px;
+    
+}
+
+.icon {
+    flex: 0 0 40%; /* Takes up 20% of the width */
+    padding: 10px;
+    font-size: 3em; /* Adjust font size for bigger icons */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* Adjust height as needed */
+    color: #6f00ff;
+   
+}
+
+.text {
+    flex: 1; /* Takes up the remaining 80% of the width */
+    padding: 10px;
 
 /* ---------------projects section ------------- */
 
@@ -239,4 +275,8 @@ nav ul li a:hover::after{
     font-size: 25px;
 }
 
-
+/* temprorary check if some elements overflow
+* {
+    outline: 1px solid red;
+} */
+  

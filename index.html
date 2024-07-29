@@ -42,7 +42,7 @@
 </div>
 
 <!------- about section --------->
- <div id="about">
+<div id="about">
     <div class="container">
         <div class="row">
             <div class="about-column1">
@@ -52,10 +52,10 @@
                 <h1 class="sub-title">About Me</h1>
                 <p>BLABLABLA</p>
                 <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('education')">Education</p>
-                    <p class="tab-links" onclick="opentav('academic_involvement')">Academic Involvement</p>
-                    <p class="tab-links" onclick="opentav('languages')">Languages</p>
-                    <p class="tab-links" onclick="opentav('hobbies')">Hobbies & Interests</p>
+                    <p class="tab-links active-link" onclick="opentab(event, 'education')">Education</p>
+                    <p class="tab-links" onclick="opentab(event, 'academic_involvement')">Academic Involvement</p>
+                    <p class="tab-links" onclick="opentab(event, 'languages')">Languages</p>
+                    <p class="tab-links" onclick="opentab(event, 'hobbies')">Hobbies & Interests</p>
                 </div>
                 <div class="tab-contents active-tab" id="education">
                     <!-- should i add volunteering projects? -->
@@ -67,10 +67,10 @@
                         <!-- maybe devide like uni and extra courses where in extra also add grahic design course and IT -->
                     </ul>
                 </div>
-                <div class="tab-contents active-tab" id="academic_involvement">
+                <div class="tab-contents" id="academic_involvement">
                     <!-- add AI conferemnce, crypthography, ??  -->
                 </div>
-                <div class="tab-contents active-tab" id="languages">
+                <div class="tab-contents" id="languages">
                     <ul>
                         <!-- think how to write the level correctly for german language -->
                         <li><span>Englsih</span><br>Native/Bilingual</li>
@@ -79,13 +79,13 @@
                         <li><span>Chinese (Mandarin)</span><br>Elementary</li>
                     </ul>
                 </div>
-                <div class="tab-contents active-tab" id="hobbies">
+                <div class="tab-contents" id="hobbies">
                     <!-- add smth with math or games or idk jogging  -->
                 </div>
             </div>
         </div>
     </div>
- </div>
+</div>
 
  <!-- -----skills section-- -->
 <div id="skills">
@@ -93,7 +93,7 @@
         <h1 class="sub-title">My skills</h1>
         <div class="row">
             <div class="skills-column1">
-                <div class="row">
+                <div class="sub-row">
                     <!-- skill 1 icon and description -->
                     <div class="icon">
                         <i class="fa-brands fa-html5"></i>
@@ -103,7 +103,7 @@
                         <p>blablabalbla</p>
                     </div>
                 </div>
-                <div class="row">
+                <div class="sub-row">
                     <!-- skill 2 icon and description -->
                     <div class="icon">
                         <i class="fa-brands fa-html5"></i>
@@ -113,7 +113,7 @@
                         <p>blablabalbla</p>
                     </div>
                 </div>
-                <div class="row">
+                <div class="sub-row">
                     <!-- skill 3 icon and description -->
                     <div class="icon">
                         <i class="fa-brands fa-html5"></i>
@@ -123,7 +123,7 @@
                         <p>blablabalbla</p>
                     </div>
                 </div>
-                <div class="row">
+                <div class="sub-row">
                     <!-- skill 4 icon and description -->
                     <div class="icon">
                         <i class="fa-brands fa-html5"></i>
@@ -135,7 +135,7 @@
                 </div>
             </div>
             <div class="skills-column2">
-                <div class="row">
+                <div class="sub-row">
                     <!-- skill 5 icon and description -->
                     <div class="icon">
                         <i class="fa-brands fa-html5"></i>
@@ -145,7 +145,7 @@
                         <p>blablabalbla</p>
                     </div>
                 </div>
-                <div class="row">
+                <div class="sub-row">
                     <!-- skill 6 icon and description -->
                     <div class="icon">
                         <i class="fa-brands fa-html5"></i>
@@ -155,7 +155,7 @@
                         <p>blablabalbla</p>
                     </div>
                 </div>
-                <div class="row">
+                <div class="sub-row">
                     <!-- skill 7 icon and description -->
                     <div class="icon">
                         <i class="fa-brands fa-html5"></i>
@@ -165,7 +165,7 @@
                         <p>blablabalbla</p>
                     </div>
                 </div>
-                <div class="row">
+                <div class="sub-row">
                     <!-- skill 8 icon and description -->
                     <div class="icon">
                         <i class="fa-brands fa-html5"></i>
@@ -287,10 +287,26 @@
 
 
 <!-- js for interactions -->
-<script>
+<!-- integration into page, about me section onclick -->
 
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(event, tabname) {
+        for (var tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (var tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
 </script>
 
+
+<!-------side menu hiding and showing------>
 <script>
     var sidemenu = document.getElementById('sidemenu');
 
