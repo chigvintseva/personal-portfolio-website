@@ -254,26 +254,192 @@ nav ul li a:hover::after{
 .text {
     flex: 1; /* Takes up the remaining 80% of the width */
     padding: 10px;
+}
 
 /* ---------------projects section ------------- */
+#projects{
+    padding: 50ox 0;
+}
 
+
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.layer{
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0,0.6), #6f00ff);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: 0.5s;
+}
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.layer p{
+    color: #f8f7f2;
+}
+.layer a{
+    margin-top: 20px;
+    color: #6f00ff;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.work:hover img{
+    transform: scale(1.2);
+}
+.work:hover
+.layer {
+    height: 100%;
+}
+
+.bth {
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #6f00ff;
+    padding: 14px 50px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #ababab;
+    transition: 0.5s;
+}
+
+.bth:hover{
+    background-color: #6f00ff;
+    box-shadow:  0px 4px 8px rgba(222, 209, 209, 0.283);
+}
 
 
 /* ---------------contact & resume section ------------- */
 .contact-left {
-    flex-basis:  70%;
+    flex-basis:  50%;
+}
+.contact-left, .contact-right{
+    margin-top: 50px;
 }
 .contact-right {
-    flex-basis:  25%;
+    flex-basis:  70%;
 }
 .contact-left p{
-    margin-top: 30px;
+    margin-top: 20px;
+    margin-bottom: 15px; /* Adjust the value as needed */
+    font-size: 16px; /* Optional: Adjust font size if needed */
 }
 .contact-left p i{
     color: #6f00ff;
-    margin-top: 15px;
-    font-size: 25px;
+    margin-top: 10px;
+    font-size: 30px;
 }
+.contact-left i {
+    margin-right: 10px; /* add space between icon and text */
+}
+.contact-text{
+    font-size: 18px;
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 45px;
+    margin-right: 15px;
+    color: #8e8e8e;
+    display: inline-block;
+    transition: 0.5s;
+}
+.social-icons a:hover{
+    color: #6f00ff;
+    transform: translateY(-5px);
+}
+.bth.bth2{
+    display: inline-block;
+    background: #6f00ff;
+    color: #fff;
+    margin-top: 7%;
+}
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #8e8e8e;
+    padding: 15px;
+    margin: 15px 0;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+form input::placeholder, form textarea::placeholder {
+    color: #d8d6d6; ]
+}
+
+form .bth.bth2 {
+    padding: 14px 60px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 3%;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    transition: box-shadow 0.3s ease;
+}
+
+/* Existing button styles */
+form .bth.bth2 {
+    padding: 14px 60px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 3%;
+    transition: box-shadow 0.3s;
+}
+/* hover for both submit and resume buttons */
+.bth.bth2:hover {
+    box-shadow:  0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.download-resume-button {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+
 
 /* temprorary check if some elements overflow
 * {
