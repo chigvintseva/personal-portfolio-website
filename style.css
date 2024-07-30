@@ -41,8 +41,9 @@ body{
     padding: 10px 10%;
 }
 
+/* change side menu to have it somewhere up not fixed */
 #sidemenu {
-    position: fixed;
+    position: fixed; 
     top: 10px;
     right: 15px; 
     padding: 10px;
@@ -405,7 +406,7 @@ form input, form textarea {
 }
 
 form input::placeholder, form textarea::placeholder {
-    color: #d8d6d6; ]
+    color: #d8d6d6; 
 }
 
 form .bth.bth2 {
