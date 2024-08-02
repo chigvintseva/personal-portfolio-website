@@ -586,13 +586,12 @@ nav ul li a:hover::after{
 }
 .row {
     display: flex;
-    flex-wrap: nowrap; /* Ensures columns stay in a single row */
+    flex-wrap: nowrap; 
     gap: 20px; /*space between columns */
 }
 
 .skills-column1, .skills-column2 {
-    flex: 1; /* Makes columns equal width */
-    /* Optional: Additional styling for columns */
+    flex: 1; /* make columns equal width */
     padding: 10px;
 }
 
@@ -601,7 +600,6 @@ nav ul li a:hover::after{
     grid-template-columns: 5% 95%; 
     align-items: center;
     gap: 20px;
-    
 }
 
 .icon {
@@ -613,7 +611,6 @@ nav ul li a:hover::after{
     align-items: center;
     height: 100px; /* Adjust height as needed */
     color: #6f00ff;
-   
 }
 
 .text {
