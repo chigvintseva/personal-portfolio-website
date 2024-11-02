@@ -77,7 +77,7 @@ nav ul li a::after{
     content: "";
     width: 0;
     height: 3px;
-    background: #6f00ff;
+    background: #ff004f;
     position: absolute;
     left:0;
     bottom: -6px;
@@ -109,7 +109,7 @@ nav ul li a:hover::after{
     margin-top: 20px;
 }
 .header-text h1 span{
-    color: #6f00ff;
+    color: #ff004f;
 }
 
 .row {
@@ -124,9 +124,8 @@ nav ul li a:hover::after{
 }
 .header-photo img{
     width: 85%;
-    margin-top: 5%; /* Reduced margin-top from 20% to 5% */
-    border-radius: 15px;
-    border-style: groove;
+    margin-top: 5%; 
+    box-shadow: #8e8e8e;
 }
 
 /* styling go to my projects button */
@@ -140,13 +139,13 @@ nav ul li a:hover::after{
     border-radius: 5px;
     border-style: groove;
     border-width: 1px;
-    transition: background-color 0.8s;
+    transition: background-color s;
     font-size: 1.1rem;
 }
 
 /* set the background appearing when the cursor is on the button */
 .go-projects a:hover {
-    background-color: #6f00ff;
+    background-color: #ff004f;
     color: #fff;
 }
 /* ---------------about section ------------- */
@@ -189,7 +188,7 @@ nav ul li a:hover::after{
     content: "";
     width: 0;
     height: 3px;
-    background: #6f00ff;
+    background: #ff004f;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -203,7 +202,7 @@ nav ul li a:hover::after{
     margin: 10px 0;
 }
 .tab-contents ul li span{
-    color: #6f00ff;
+    color: #ff004f;
     font-size: 14px;
 }
 .tab-contents{
@@ -246,7 +245,7 @@ nav ul li a:hover::after{
     justify-content: center;
     align-items: center;
     height: 100px; /* Adjust height as needed */
-    color: #6f00ff;
+    color: #ff004f;
    
 }
 
@@ -283,7 +282,7 @@ nav ul li a:hover::after{
 .layer{
     width: 100%;
     height: 0%;
-    background: linear-gradient(rgba(0,0,0,0.6), #6f00ff);
+    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
     border-radius: 10px;
     color: #fff;
     position: absolute;
@@ -306,7 +305,7 @@ nav ul li a:hover::after{
 
 .layer a{
     margin-top: 20px;
-    color: #6f00ff;
+    color: #ff004f;
     text-decoration: none;
     font-size: 20px;
     line-height: 60px;
@@ -337,7 +336,7 @@ nav ul li a:hover::after{
 }
 
 .bth:hover{
-    background-color: #6f00ff;
+    background-color: #ff004f;
     box-shadow:  0px 4px 8px rgba(222, 209, 209, 0.283);
 }
 
@@ -353,7 +352,7 @@ nav ul li a:hover::after{
     margin-top: 30px;
 }
 .contact-left p i{
-    color: #6f00ff;
+    color: #ff004f;
     margin-top: 15px;
     font-size: 25px;
 }
@@ -441,7 +440,7 @@ nav ul li a::after{
     content: "";
     width: 0;
     height: 3px;
-    background: #6f00ff;
+    background: #ff004f;
     position: absolute;
     left:0;
     bottom: -6px;
@@ -473,7 +472,7 @@ nav ul li a:hover::after{
     margin-top: 20px;
 }
 .header-text h1 span{
-    color: #6f00ff;
+    color: #ff004f;
 }
 
 .row {
@@ -510,7 +509,7 @@ nav ul li a:hover::after{
 
 /* set the background appearing when the cursor is on the button */
 .go-projects a:hover {
-    background-color: #6f00ff;
+    background-color: #ff004f;
     color: #fff;
 }
 
@@ -554,7 +553,7 @@ nav ul li a:hover::after{
     content: "";
     width: 0;
     height: 3px;
-    background: #6f00ff;
+    background: #ff004f;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -568,7 +567,7 @@ nav ul li a:hover::after{
     margin: 10px 0;
 }
 .tab-contents ul li span{
-    color: #6f00ff;
+    color: #ff004f;
     font-size: 14px;
 }
 .tab-contents{
@@ -609,7 +608,7 @@ nav ul li a:hover::after{
     justify-content: center;
     align-items: center;
     height: 100px; /* Adjust height as needed */
-    color: #6f00ff;
+    color: #ff004f;
 }
 
 .text {
@@ -643,7 +642,7 @@ nav ul li a:hover::after{
 .layer{
     width: 100%;
     height: 0%;
-    background: linear-gradient(rgba(0,0,0,0.6), #6f00ff);
+    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -668,7 +667,7 @@ nav ul li a:hover::after{
 }
 .layer a{
     margin-top: 20px;
-    color: #6f00ff;
+    color: #ff004f;
     text-decoration: none;
     font-size: 20px;
     line-height: 60px;
@@ -690,7 +689,7 @@ nav ul li a:hover::after{
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid #6f00ff;
+    border: 1px solid #ff004f;
     padding: 14px 50px;
     border-radius: 10px;
     text-decoration: none;
@@ -699,7 +698,7 @@ nav ul li a:hover::after{
 }
 
 .bth:hover{
-    background-color: #6f00ff;
+    background-color: #ff004f;
     box-shadow:  0px 4px 8px rgba(222, 209, 209, 0.283);
 }
 
@@ -720,7 +719,7 @@ nav ul li a:hover::after{
     font-size: 16px; /* Optional: Adjust font size if needed */
 }
 .contact-left p i{
-    color: #6f00ff;
+    color: #ff004f;
     margin-top: 10px;
     font-size: 30px;
 }
@@ -742,12 +741,12 @@ nav ul li a:hover::after{
     transition: 0.5s;
 }
 .social-icons a:hover{
-    color: #6f00ff;
+    color: #ff004f;
     transform: translateY(-5px);
 }
 .bth.bth2{
     display: inline-block;
-    background: #6f00ff;
+    background: #ff004f;
     color: #fff;
     margin-top: 7%;
 }
