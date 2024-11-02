@@ -139,7 +139,7 @@ nav ul li a:hover::after{
     border-radius: 5px;
     border-style: groove;
     border-width: 1px;
-    transition: background-color s;
+    transition: background-color 0.5s;
     font-size: 1.1rem;
 }
 
@@ -216,11 +216,6 @@ nav ul li a:hover::after{
 /* ---------------skills section ------------- */
 #skills{
     padding: 30px 0;
-}
-.row {
-    display: flex;
-    flex-wrap: nowrap; /* Ensures columns stay in a single row */
-    gap: 20px; /*space between columns */
 }
 
 .skills-column1, .skills-column2 {
