@@ -5,14 +5,12 @@
     font-weight: normal;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'Roboto Condensed';
     src: url('roboto-font/RobotoCondensed-Italic-VariableFont_wght.ttf') format('truetype');
     font-weight: normal;
     font-style: italic;
 }
-
 /* apply the font to the whole webpage */
 * {
     padding: 0;
@@ -20,14 +18,11 @@
     font-family: 'Roboto Condensed', sans-serif;
     box-sizing: border-box;
 }
-
 html{
     scroll-behavior: smooth;
 }
-
-
 body{
-    background: #f8f7f2;
+    background: #f9f9f9;
     color: #080808;
 }
 
@@ -36,43 +31,37 @@ body{
     width: 100%;
     height: 100%; 
 }
-
 .container{
     padding: 10px 10%;
 }
-
 #sidemenu {
     position: fixed;
     top: 10px;
     right: 15px; 
     padding: 10px;
     border-radius: 10px;
-    background-color: #ffffffb5;
+    background-color: #f9f9f9;
+    z-index: 1;  /* fixes overlapping with  image's shadow added */
 }
-
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-
-
 nav ul li{
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
     
 }
-
 nav ul li a{
     color: #080808;
     text-decoration: none;
     font-size: 18px;
     position: relative;
 }
-
-/* create underlines for sidemenu elements*/
+/* create underlines for sidemenu elements */
 nav ul li a::after{
     content: "";
     width: 0;
@@ -81,10 +70,9 @@ nav ul li a::after{
     position: absolute;
     left:0;
     bottom: -6px;
-    transition: 0.5s; 
+    transition: 0.6s; 
 }
-
-/*make the underlines visible only after cursor movement*/
+/* make the underlines visible only after cursor movement */
 nav ul li a:hover::after{
     width: 100%;
 }
@@ -100,53 +88,77 @@ nav ul li a:hover::after{
 
 /* styling the header text */
 .header-text{
-    margin-top: 0px;
     font-size: 30px;
     flex-basis: 60%;
 }
 .header-text h1{
-    font-size: 60px;
-    margin-top: 20px;
+    font-size: 65px;
+    margin-top: 15%;
 }
 .header-text h1 span{
     color: #ff004f;
 }
-
 .row {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-/* styling the header photo */
-.header-photo {
-    flex-basis: 35%;
+.social-icons{
+    margin-top: 23px;
 }
-.header-photo img{
-    width: 85%;
-    margin-top: 20%;
-    margin-left: 50px;
-    border-radius: 15px;
-    border-style: groove;
+.social-icons a{
+    text-decoration: none;
+    font-size: 60px;
+    margin-right: 15px;
+    color: #8e8e8e;
+    display: inline-block;
+    transition: 0.6s;
+}
+.social-icons a:hover{
+    color: #ff004f;
+    transform: translateY(-15px);
+}
+.bth.bth2{
+    display: inline-block;
+    background: #ff004f;
+    color: #fff;
+    margin-top: 7%;
 }
 
-/* styling go to my projects button 
+/* style for go-projects button */
 .go-projects{
-    margin-top: -50px ;
+    margin-top: 80px;
+    margin-left: -18px;
 }
-.go-projects a {
+.go-projects a{
     text-decoration: none;
+    font-size: 25px;
+    color: #ff004f;
     display: inline-block;
     padding: 10px 20px;
     border-radius: 5px;
     border-style: groove;
-    border-width: 1px;
-    transition: background-color 0.5s;
+    border-width: 0cm;
+    transition: box-shadow 0.5s;
 }
 .go-projects a:hover {
-    background-color: #ff004f;
-    color: #fff;
-}*/
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1), -10px -10px 10px white;
+}
+
+/* styling the header photo */
+.header-photo {
+    flex-basis: 37%;
+    margin-right: -50px;
+    margin-top: -25px;
+   position: relative;
+   filter: drop-shadow(0 6mm 4mm #00000079);
+}
+.header-photo img{
+    width: 85%;
+    margin-top: 20%;
+    border-radius: 15px;
+} 
 
 /* ---------------about section ------------- */
 #about{
@@ -371,28 +383,7 @@ nav ul li a:hover::after{
     margin-right: 10px; /* add space between icon and text */
 }
 .contact-text{
-    font-size: 18px;
-}
-.social-icons{
-    margin-top: 30px;
-}
-.social-icons a{
-    text-decoration: none;
-    font-size: 45px;
-    margin-right: 15px;
-    color: #8e8e8e;
-    display: inline-block;
-    transition: 0.5s;
-}
-.social-icons a:hover{
-    color: #ff004f;
-    transform: translateY(-5px);
-}
-.bth.bth2{
-    display: inline-block;
-    background: #ff004f;
-    color: #fff;
-    margin-top: 7%;
+    font-size: 30px;
 }
 .contact-right form{
     width: 100%;
