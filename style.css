@@ -291,11 +291,16 @@ nav ul li a:hover::after{
 #projects{
     padding: 30px 0;
 }
+.sub-sub-title{
+    font-size: 30px;
+    margin-top: 10px;
+}
 .work-list{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
     grid-gap: 40px;
     margin-top: 35px;
+    margin-bottom: 30px;
 }
 .work {
     display: grid;
@@ -392,8 +397,8 @@ nav ul li a:hover::after{
 }
 .contact-left p{
     margin-top: 20px;
-    margin-bottom: 15px; /* Adjust the value as needed */
-    font-size: 20px; /* Optional: Adjust font size if needed */
+    margin-bottom: 15px; 
+    font-size: 20px; 
 }
 .contact-left p i{
     color: #ff004f;
@@ -447,22 +452,6 @@ form .bth.bth2 {
 
     margin-bottom: -50px;
 }
-
-/* old version
-.contact-left {
-    flex-basis:  70%;
-}
-.contact-right {
-    flex-basis:  25%;
-}
-.contact-left p{
-    margin-top: 30px;
-}
-.contact-left p i{
-    color: #ff004f;
-    margin-top: 15px;
-    font-size: 25px;
-} */
 
 /* temprorary check if some elements overflow
 * {
