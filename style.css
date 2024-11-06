@@ -92,11 +92,14 @@ nav ul li a:hover::after{
     flex-basis: 60%;
 }
 .header-text h1{
-    font-size: 65px;
+    font-size: 70px;
     margin-top: 15%;
 }
 .header-text h1 span{
     color: #ff004f;
+}
+.header-text p span{
+    font-size: smaller;
 }
 .row {
     display: flex;
@@ -109,7 +112,7 @@ nav ul li a:hover::after{
 }
 .social-icons a{
     text-decoration: none;
-    font-size: 60px;
+    font-size: 55px;
     margin-right: 15px;
     color: #8e8e8e;
     display: inline-block;
@@ -128,12 +131,12 @@ nav ul li a:hover::after{
 
 /* style for go-projects button */
 .go-projects{
-    margin-top: 80px;
+    margin-top: 50px;
     margin-left: -18px;
 }
 .go-projects a{
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
     color: #ff004f;
     display: inline-block;
     padding: 10px 20px;
@@ -171,7 +174,7 @@ nav ul li a:hover::after{
     flex-wrap: wrap;
 }
 .about-column1{
-    flex-basis: 30%;
+    flex-basis: 33%;
     filter: drop-shadow(0 6mm 4mm #00000079);
 }
 .about-column1 img{
@@ -186,13 +189,18 @@ nav ul li a:hover::after{
     font-weight: 600;
     color: #080808;
 }
-.tab-titles{
+.about-me{
+    font-size: 19px;
+    margin-bottom: 20px;
+}
+.tab-titles {
     display: flex;
     margin: 10px 0 15px;
 }
 .tab-links{
     margin-right: 50px;
-    font-size: 25px;
+    font-size: 17px;
+    color: #262626;
     font-weight: 500;
     cursor: pointer;
     position: relative;
@@ -216,12 +224,10 @@ nav ul li a:hover::after{
     line-height: 1.3;
 }
 .tab-contents ul li span{
-    color: #ff004f;
-    font-size: 15px;
+    font-size: 14px;
 }
 .tab-contents ul li span a{
     text-decoration: none;
-    color: #ff004f;
     border-radius: 5px;
     border-style: groove;
     border-width: 0cm;
@@ -231,13 +237,14 @@ nav ul li a:hover::after{
     box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1), -10px -10px 10px white;
 }
 #about-name{
-    color: #ff004f;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
 }
 #dates{
     font-style: italic;
-    color:#080808
+    font-size: 13px;
+    color:#080808;
+    color: #ff004f;
 }
 .tab-contents{
     display: none;
