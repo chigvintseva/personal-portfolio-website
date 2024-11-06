@@ -88,6 +88,7 @@ nav ul li a:hover::after{
 
 /* styling the header text */
 .header-text{
+    cursor: default;
     font-size: 30px;
     flex-basis: 60%;
 }
@@ -168,6 +169,7 @@ nav ul li a:hover::after{
 #about{
     padding: 80px 0;
     color: #262626;
+    cursor: default;
 }
 .row{
     display: flex;
@@ -197,6 +199,7 @@ nav ul li a:hover::after{
 .tab-titles {
     display: flex;
     margin: 10px 0 15px;
+    cursor: pointer;
 }
 .tab-links{
     margin-right: 50px;
@@ -258,6 +261,7 @@ nav ul li a:hover::after{
 /* ---------------skills section ------------- */
 #skills{
     padding: 30px 0;
+    cursor: default;
 }
 .skills-row {
     display: flex;
