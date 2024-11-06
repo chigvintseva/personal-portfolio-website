@@ -264,9 +264,8 @@ nav ul li a:hover::after{
     gap: 20px; /*space between columns */
 }
 
-.skills-column1, .skills-column2 {
-    flex: 1; /* Makes columns equal width */
-    /* Optional: Additional styling for columns */
+.skills-column0, .skills-column1, .skills-column2 {
+    flex: 1; 
     padding: 10px;
 }
 
@@ -275,23 +274,24 @@ nav ul li a:hover::after{
     grid-template-columns: 5% 95%; 
     align-items: center;
     gap: 20px;
-    
+    border-radius: 10px;
+    border-color: #262626;    
 }
 
 .icon {
-    flex: 0 0 40%; /* Takes up 20% of the width */
+    flex: 0 0 40%; 
     padding: 10px;
-    font-size: 3em; /* Adjust font size for bigger icons */
+    font-size: 60px; 
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px; /* Adjust height as needed */
+    height: 100px; 
     color: #ff004f;
    
 }
 
 .text {
-    flex: 1; /* Takes up the remaining 80% of the width */
+    flex: 1; 
     padding: 10px;
 }
 
