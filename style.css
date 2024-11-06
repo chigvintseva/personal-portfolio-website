@@ -218,6 +218,17 @@ nav ul li a:hover::after{
     color: #ff004f;
     font-size: 15px;
 }
+.tab-contents ul li span a{
+    text-decoration: none;
+    color: #ff004f;
+    border-radius: 5px;
+    border-style: groove;
+    border-width: 0cm;
+    transition: box-shadow 0.5s;
+}
+.tab-contents ul li span a:hover{
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.1), -10px -10px 10px white;
+}
 #about-name{
     color: #ff004f;
     font-size: 18px;
@@ -433,6 +444,7 @@ form .bth.bth2 {
     display: inline-block;
     text-decoration: none;
     text-align: center;
+
     margin-bottom: -50px;
 }
 
