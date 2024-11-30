@@ -444,6 +444,16 @@ nav ul li a:hover::after{
 .contact-text{
     font-size: 20px;
 }
+.contact-right div{
+    background: #afafaf;
+    padding: 15px;
+    margin: 15px 0;
+    font-size: 18px;
+    border-radius: 6px;
+}
+.contact-right p{
+    color:#01192a
+}
 .contact-right form{
     width: 100%;
 }
