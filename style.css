@@ -22,7 +22,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background: #010d17;
+    background: #01192a;
     color: #fafafa; 
 }
 
@@ -30,7 +30,7 @@ body{
 #header {
     width: 100%;
     height: 100%; 
-    background-image: url(images&resume/background-img-smaller.png);
+    background-image: url(images&resume/backgroung-img-smaller-new.png);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -44,6 +44,9 @@ nav{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+#sidemenu{
+    margin-left: -20px;
 }
 nav ul li{
     display: inline-block;
@@ -114,11 +117,12 @@ nav ul li a:hover::after{
 
 /* style for go-projects button */
 .go-projects{
-    margin-top: 70px;
+    margin-top: 55px;
     margin-left: -18px;
 }
 .go-projects a{
     text-decoration: none;
+    margin-bottom: 50px;
     font-size: 20px;
     color: rgb(253, 160, 31);
     display: inline-block;
@@ -131,20 +135,6 @@ nav ul li a:hover::after{
 .go-projects a:hover {
     box-shadow: 12px 12px 12px rgba(253, 161, 31, 0.094), -10px -10px 10px #001624;
 }
-
-/* styling the header photo
-.header-photo {
-    flex-basis: 45%;
-    margin-right: -50px;
-    margin-top: -7%;
-   position: relative;
-   filter: drop-shadow(0 6mm 4mm #00000079);
-}
-.header-photo img{
-    width: 85%;
-    margin-top: 20%;
-    border-radius: 15px;
-}  */
 
 
 /* ---------------about section ------------- */
@@ -506,16 +496,34 @@ nav .fas{
 }
 
 @media only screen and (max-width: 600px){
+    #header{
+        background-image: url(images&resume/margin-right-10px.png);
+    }
     .header-text{
-        margin-top: 100%;
-        font-size: 16px;
+        margin-top: 22%;
     }
     .header-text h1{
-        font-size: 30px;
+        font-size: 55px;
     }
-    /* .header-photo{
-        display: contents;
-    } */
+    .header-text h1 span{
+        color: #fda01f;
+    }
+    .header-text p{
+        font-size: 18px;
+    }
+    .header-text p span{
+        font-size: 15px;
+    }    
+    .social-icons{
+        margin-bottom: 130px;
+    }
+    .social-icons a{
+       font-size: 50px;
+    }
+    .go-projects a{
+        font-size: 17px;
+        margin-bottom: 30px;
+    }
     nav .fas{
         display: block;
         font-size:25px;
