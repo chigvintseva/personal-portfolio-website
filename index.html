@@ -21,9 +21,10 @@
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contacts & Resume</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
-            <div class="row">
                 <div class="header-text">
                     <h1>Hi, I'm <span>Alena</span></h1>
                     <p>
@@ -43,10 +44,6 @@
                         Jump to Projects</a>
                         </div>
                     </div>
-                </div>
-                <div class="header-photo">
-                    <img src="images&resume/main.png">
-                    <!-- <img src="images&resume/sit-pink-soft.jpg"> -->
                 </div>
             </div>
         </div>
@@ -426,6 +423,7 @@
         document.getElementById(tabname).classList.add("active-tab");
     }
 </script>
+
 <!-------side menu hiding and showing------>
 <script>
     var sidemenu = document.getElementById('sidemenu');

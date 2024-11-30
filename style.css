@@ -22,7 +22,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background: #001624;
+    background: #010d17;
     color: #fafafa; 
 }
 
@@ -30,20 +30,15 @@ body{
 #header {
     width: 100%;
     height: 100%; 
+    background-image: url(images&resume/background-img-smaller.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 .container{
     padding: 10px 10%;
 }
-#sidemenu {
-    position: fixed;
-    top: 10px;
-    right: 15px; 
-    padding: 10px;
-    border-radius: 10px;
-    background-color: #ffffffd3;
 
-    z-index: 1;  /* fixes overlapping with  image's shadow added */
-}
 nav{
     display: flex;
     align-items: center;
@@ -57,7 +52,7 @@ nav ul li{
     
 }
 nav ul li a{
-    color: #001624;
+    color: #ffffff;
     text-decoration: none;
     font-size: 18px;
     position: relative;
@@ -79,15 +74,6 @@ nav ul li a:hover::after{
 }
 
 /* header elements location */
-#header{
-    display: flex;
-    flex-direction:column;
-    justify-content: center;
-    padding: 20px;
-    align-items: center;
-}
-
-/* styling the header text */
 .header-text{
     cursor: default;
     font-size: 30px;
@@ -95,18 +81,13 @@ nav ul li a:hover::after{
 }
 .header-text h1{
     font-size: 70px;
-    margin-top: 15%;
+    margin-top: 9%;
 }
 .header-text h1 span{
     color: #fda01f;
 }
 .header-text p span{
     font-size: smaller;
-}
-.row {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 .social-icons{
@@ -133,13 +114,13 @@ nav ul li a:hover::after{
 
 /* style for go-projects button */
 .go-projects{
-    margin-top: 50px;
+    margin-top: 70px;
     margin-left: -18px;
 }
 .go-projects a{
     text-decoration: none;
     font-size: 20px;
-    color: #fda01f;
+    color: rgb(253, 160, 31);
     display: inline-block;
     padding: 10px 20px;
     border-radius: 5px;
@@ -148,14 +129,14 @@ nav ul li a:hover::after{
     transition: box-shadow 0.5s;
 }
 .go-projects a:hover {
-    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.15), -10px -10px 10px #001624;
+    box-shadow: 12px 12px 12px rgba(253, 161, 31, 0.094), -10px -10px 10px #001624;
 }
 
-/* styling the header photo */
+/* styling the header photo
 .header-photo {
     flex-basis: 45%;
     margin-right: -50px;
-    margin-top: -5px;
+    margin-top: -7%;
    position: relative;
    filter: drop-shadow(0 6mm 4mm #00000079);
 }
@@ -163,7 +144,7 @@ nav ul li a:hover::after{
     width: 85%;
     margin-top: 20%;
     border-radius: 15px;
-} 
+}  */
 
 
 /* ---------------about section ------------- */
@@ -290,8 +271,12 @@ nav ul li a:hover::after{
 }
 
 .sub-row:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* N5: Shadow effect on hover */
-    border-color: #fda01f; /* N6: Optional border color change on hover */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2); /* N5: Shadow effect on hover */
+    border-color: #fda01f; /* Optional border color change on hover */
+    .text h2{
+        color: #fda01f;
+        transition: 0.5s ease;
+    }
 }
 
 .icon {
@@ -514,3 +499,46 @@ form .bth.bth2 {
 * {
     outline: 1px solid red;
 } */
+
+/* ------css for small screen----------- */
+nav .fas{
+    display: none;
+}
+
+@media only screen and (max-width: 600px){
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+    /* .header-photo{
+        display: contents;
+    } */
+    nav .fas{
+        display: block;
+        font-size:25px;
+    }
+    nav ul{
+        background: #fda01f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;    
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+}
