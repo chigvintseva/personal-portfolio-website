@@ -467,14 +467,14 @@ form .bth.bth2 {
     font-size: 18px;
     cursor: pointer;
     margin-top: 3%;
-    color: #001624;
+    color: #ffffff;
     border: none;
     border-radius: 6px;
     transition: box-shadow 0.3s ease;
 }
 
 .bth.bth2{
-    color: #001624;
+    color: #ffffff;
 }
 /* hover for both submit and resume buttons */
 .bth.bth2:hover {

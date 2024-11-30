@@ -393,9 +393,9 @@
                 <a href="" download class="bth bth2 download-resume-button">Download Resume (Full-Stack Development)</a> -->
             </div>
             <div class="contact-right">
-                <form name="submit-to-google-scheet">
+                <form name="submit-to-google-sheet">
                     <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
                     <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
                     <button type="submit" class="bth bth2">Submit</button>
                 </form>
@@ -435,5 +435,18 @@
         sidemenu.style.right = '-200px';
     }
 </script>
+<!-- google forms connection -->
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbysbHnV3zB5c1RF_pzn9vdsLgkOjgxqqQ5T93FaDp4gUUvxn3o812PC8UBf8Sn8SgA-cA/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 
 </body>
+</html>
